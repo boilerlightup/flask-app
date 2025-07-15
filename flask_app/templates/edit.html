@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Edit Task</title></head>
+<body>
+    <h2>Edit Task</h2>
+    <form method="POST">
+        <input name="content" value="{{ task[1] }}" required>
+        <button type="submit">Update</button>
+    </form>
+    <p><a href="{{ url_for('dashboard') }}">Back to Dashboard</a></p>
+</body>
+</html>
